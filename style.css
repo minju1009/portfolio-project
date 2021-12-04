@@ -33,6 +33,13 @@ body {
 
 }
 
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border:none;
+    outline: none;
+}
+
 /* Typography */
 h1{
     font-size: var(--font-large);
@@ -62,12 +69,17 @@ h2{
     margin: 4px 0;
 }
 
+/* index */
+#index{
+    background: url(img/background\ image.jpeg);
+}
+
 /* Navbar */
 #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 20px 30px 40px;
+    padding: 40px 20px 30px 40px;
     
 }
 
@@ -103,4 +115,19 @@ ul {
     background-color: var(--color-pink);
     color: var(--color-white);
 
+}
+
+/* Home */
+#home{
+  padding: 150px 300px 300px 180px;
+}
+
+.home__contact{
+    font-size:var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px 0px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    border-radius: 4px;
 }
