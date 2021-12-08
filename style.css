@@ -133,6 +133,11 @@ ul {
     border-radius: 4px;
 }
 
+.home__contact:hover{
+    background-color: white;
+    color: var(--color-pink);
+}
+
 /* Section common */
 .section {
     padding: 50px;
@@ -225,7 +230,7 @@ ul {
 }
 
 .skillset {
-    display: flex;
+    display: flex;      
     color: var(--color-white);
     margin: 30px 0;
   
@@ -281,4 +286,104 @@ ul {
 
 .etc {
     background-color: rgb(170, 169, 169);
+}
+
+/* Work */
+
+.work__categories {
+    margin: 40px;
+}
+
+.category__btn{
+    border:1px solid var(--color-grey);
+    border-radius: 4px;
+    font-size: var(--font-regular);
+    padding: 8px 48px;
+}
+
+.category__btn.active,
+.category__btn:hover{
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count{
+    opacity:1;
+    top: 0px;
+}
+
+.category__count{
+    background-color: gray;
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+    line-height: 24px;
+    margin-left: 20px;
+    position: relative;
+    top: -20px;
+    left: 4px;
+    opacity: 0;
+    transition: all 200ms ease-in;
+}
+
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    position: relative;
+    margin: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__img{
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.project__description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all 200ms ease-in;
+    transform: translateY(10px);
+}
+
+.project:hover .project__description{
+    opacity: 0.8;
+    transform: translateY(0px); 
+}
+
+.project__description h3, 
+.project__description span {
+    color: white;
+}
+
+.project__description h3::after{
+content: '';
+display: block;
+width: 25px;
+height: 2px;
+background-color: white;
+position: relative;
+left: 50%;
+margin-left: -12px;
+margin-top: 10px;
 }
