@@ -147,6 +147,7 @@ ul {
 
 .section__container{
     max-width: 1200px;
+    
 }
 
 /* About */
@@ -224,6 +225,8 @@ ul {
     font-size: var(--font-micro);
 }
 
+/* Skills */
+
 #skills{
     background-color: var(--color-lightpurple);
 }
@@ -233,10 +236,6 @@ ul {
     color: var(--color-white);
     margin: 30px 0;
   
-}
-
-.skillset h3{
-    
 }
 
 .skillset__title{
@@ -398,6 +397,7 @@ margin-top: 10px;
 
 .testimonial{
     display: flex;
+
 }
 
 .testimonial__avatar{
