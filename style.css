@@ -226,7 +226,6 @@ ul {
 
 #skills{
     background-color: var(--color-lightpurple);
-    
 }
 
 .skillset {
@@ -386,4 +385,47 @@ position: relative;
 left: 50%;
 margin-left: -12px;
 margin-top: 10px;
+}
+
+/* Testimonials */
+#testimonials{
+    background-color: var(--color-lightpurple);
+}
+
+.testimonials{
+    margin: 40px;
+}
+
+.testimonial{
+    display: flex;
+}
+
+.testimonial__avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   
+}
+
+.testimonial__speech-bubble{
+    padding: 20px;
+    background-color: white;
+    margin: 32px 0;
+    border: 4px;
+}
+
+.testimonial__avatar:nth-child(odd){
+    margin-right:40px;
+}
+
+.testimonial__avatar:nth-child(even){
+    margin-left: 40px;
+}
+
+.testimonial__speech-bubble p{
+    color: var(--color-grey);
+}
+
+.testimonial__speech-bubble a{
+    color: var(--color-pink);
 }
