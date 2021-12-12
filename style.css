@@ -80,8 +80,16 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px 30px 40px;
-    
+    padding: 20px 20px 20px 40px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+#navbar.navbar--dark{
+    background-color: #5D76CA;
+    padding: 8px 20px 8px 40px;
 }
 
 ul {
@@ -130,6 +138,10 @@ ul {
 /* Home */
 #home{
   padding: 150px 300px 300px 180px;
+}
+
+.home__title{
+    padding: 160px 0 0 0;
 }
 
 .home__contact{
@@ -445,7 +457,7 @@ margin-top: 10px;
 /* Contact */
 
 #contact{
-    background-color: #00B333;
+    background-color: blueviolet;
 
 }
 
