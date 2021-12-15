@@ -138,6 +138,12 @@ ul {
 /* Home */
 #home{
   padding: 150px 300px 300px 180px;
+  
+}
+
+.home--transparent {
+   background-color: white;
+    opacity: 0.5;   
 }
 
 .home__title{
