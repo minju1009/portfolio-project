@@ -500,11 +500,15 @@ margin-top: 10px;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms ease-in;
 }
 
-.arrow-up .visible{
-    display: block;
+.arrow-up.visible{
+    opacity: 1;  
+    pointer-events: auto;
+    
 }
 
 /* For below 768px screen width */
